@@ -18,10 +18,19 @@ def getGreetings(file_name):
     Input: filname_name (string): name of the final
     Output: a list of tuples, where each tuple is a greeting (prefix,target)
     """
-    xmldoc = minidom.parse(file_name)
     greetings = list()
-    for greeting_tag in xmldoc.getElementsByTagName("greeting"):
-        print(greeting_tag)
+    xmldoc = minidom.parse(file_name)
+    root = xmldoc.documentElement
+    #Loop through all elements of root
+    for child in root.childNodes:
+        #Check if child is a greeting element
+        if child.localName == 'greeting':
+            prefixes = child.getElementsByTagName("prefix")
+            targets = child.getElementsByTagName("target")
+            prefix = prefixes[0].firstChild.nodeValue
+            target = targets[0].firstChild.nodeValue
+            greetings.append((prefix,target))
+    return greetings
 
-exclaim(("hello","world"))
-getGreetings("greetings.xml")
+for greeting in getGreetings("greetings.xml"):
+    exclaim(greeting)
