@@ -25,10 +25,13 @@ def getGreetings(file_name):
     for child in root.childNodes:
         #Check if child is a greeting element
         if child.localName == 'greeting':
+            #get sub-elements
             prefixes = child.getElementsByTagName("prefix")
             targets = child.getElementsByTagName("target")
+            #extract value from first instance of each element class
             prefix = prefixes[0].firstChild.nodeValue
             target = targets[0].firstChild.nodeValue
+            #add tuple to greetings list
             greetings.append((prefix,target))
     return greetings
 
