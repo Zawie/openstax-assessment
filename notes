@@ -1,4 +1,5 @@
-Build & Tag Command:
+Build Commands:
+
 docker build -t openstax-intern-assessment .
 
 Run Command:

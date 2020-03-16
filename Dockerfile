@@ -1,2 +1,4 @@
 FROM python:3
-ADD code/read_greetings.py /
+WORKDIR /
+COPY . /
+CMD [ "python", "code/read_greetings.py" ]
