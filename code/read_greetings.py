@@ -7,7 +7,7 @@ import sys
 
 def exclaim(greeting):
     """
-    Input: greeting (tuple): from xml
+    Input: greeting (tuple): (prefix,target)
     Output: None
     Prints desired output
     """
