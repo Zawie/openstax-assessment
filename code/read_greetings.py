@@ -13,7 +13,7 @@ def exclaim(greeting):
     """
     prefix = greeting[0]
     target = greeting[1]
-    print("{}, {}!".format(prefix,target))
+    print("{}, {}!".format(prefix,target).title())
 
 def getGreetings(file_name):
     """
