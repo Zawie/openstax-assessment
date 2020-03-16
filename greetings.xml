@@ -11,4 +11,12 @@
     <prefix>hello there</prefix>
     <target>General Grievous</target>
   </greeting>
+  <greeting>
+    <prefix>ayo</prefix>
+    <target>Brenda</target>
+  </greeting>
+  <greeting>
+    <prefix>sup</prefix>
+    <target>Thomas</target>
+  </greeting>
 </root>

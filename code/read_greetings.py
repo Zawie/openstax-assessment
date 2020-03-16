@@ -38,8 +38,11 @@ def getGreetings(file_name):
     return greetings
 
 #Get file from docker command
-FILE_NAME = sys.argv[1]
 
-#Get and exlaim all the greetings
-for greeting in getGreetings(FILE_NAME):
-    exclaim(greeting)
+if len(sysargs != 2):
+    print("Invalid number of arguments passed!")
+else:
+    FILE_NAME = sys.argv[1]
+    #Get and exlaim all the greetings
+    for greeting in getGreetings(FILE_NAME):
+        exclaim(greeting)
