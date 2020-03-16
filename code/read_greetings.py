@@ -3,6 +3,7 @@
 #March 15th 2020
 
 from xml.dom import minidom
+import sys
 
 def exclaim(greeting):
     """
@@ -36,5 +37,9 @@ def getGreetings(file_name):
             greetings.append((prefix,target))
     return greetings
 
-for greeting in getGreetings("greetings.xml"):
+#Get file from docker command
+FILE_NAME = sys.argv[1]
+
+#Get and exlaim all the greetings
+for greeting in getGreetings(FILE_NAME):
     exclaim(greeting)

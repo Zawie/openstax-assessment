@@ -1,6 +1,9 @@
-Build Commands:
-
+Build & Tag Command:
 docker build -t openstax-intern-assessment .
 
 Run Command:
+docker run --rm -v $PWD:$PWD openstax-intern-assessment python /code/read_greetings.py $PWD/greetings.xml
+
+Command to Build & Run:
+docker build -t openstax-intern-assessment .
 docker run --rm -v $PWD:$PWD openstax-intern-assessment python /code/read_greetings.py $PWD/greetings.xml
