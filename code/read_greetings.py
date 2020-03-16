@@ -1,6 +1,7 @@
 #Adam Zawierucha
 #OpenStax Internship Assessment
 #March 15th 2020
+
 from xml.dom import minidom
 
 def exclaim(greeting):
@@ -15,7 +16,7 @@ def exclaim(greeting):
 
 def getGreetings(file_name):
     """
-    Input: filname_name (string): name of the final
+    Input: filname_name (string): name of the file
     Output: a list of tuples, where each tuple is a greeting (prefix,target)
     """
     greetings = list()
