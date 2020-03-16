@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root xmlns="openstax.org">
+  <title>OpenStax Interview Assessment</title>
+  <greeting>
+    <prefix>hi</prefix><target>OpenStax</target>
+  </greeting>
+  <greeting>
+    <target>world</target><prefix>hello</prefix>
+  </greeting>
+  <greeting>
+    <prefix>hello there</prefix>
+    <target>General Grievous</target>
+  </greeting>
+</root>
